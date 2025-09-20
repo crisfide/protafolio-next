@@ -1,0 +1,38 @@
+:root {
+    --color-linkedin: #0077B5;
+    --color-outlook: #0078d4;
+}
+
+main.contacto{
+    display: flex;
+}
+.contacto-contenedor{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 200px;
+}
+.contacto-contenedor .btn{
+    width: 100%;
+    box-sizing: border-box;
+}
+.contacto-contenedor .btn, .contacto-contenedor .btn>*, .btn.linkedin>*{
+    color: white;
+}
+.btn.linkedin{
+    background-color: var(--color-linkedin);
+}
+.btn-mail{
+    background-color: var(--color-outlook);
+}
+
+
+@media screen and (max-width: 800px) {
+    .contacto-contenedor{
+        width: 80%;
+    }
+    
+}

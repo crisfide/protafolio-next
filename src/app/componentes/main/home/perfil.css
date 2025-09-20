@@ -1,0 +1,49 @@
+.perfil{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    max-width: 60vw;
+    min-height: calc(100vh - 60px);
+}
+.perfil h1{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.perfil h2{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.perfil p{
+    white-space: pre-wrap;
+    font-size: 1rem;
+}
+.perfil figure{
+    text-align: center;
+}
+.perfil img{
+    max-width: 300px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .perfil{
+        flex-direction: column;
+        /* font-size: 4vw; */
+        max-width: none;
+    }
+        
+    .perfil figure{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    section.perfil{
+        padding-bottom: 0;
+    }
+}

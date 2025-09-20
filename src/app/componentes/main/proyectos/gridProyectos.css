@@ -1,0 +1,216 @@
+.carrusel-container{    
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.carrusel-container > .btn-scroll{
+    background-color: transparent;
+    border: 1px solid #8882;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 75px;
+}
+.carrusel-container > .btn-scroll:first-child:hover:not(:disabled){
+    background: linear-gradient(to right, #8884 5%,transparent);
+    border-right: none;
+}
+.carrusel-container > .btn-scroll:last-child:hover:not(:disabled){
+    background: linear-gradient(to left, #8884 5%,transparent);
+    border-left: none;
+}
+.carrusel-container > .btn-scroll:disabled{
+    cursor: default;
+    color: #8882 !important; 
+}
+
+
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 30px;
+}
+.carrusel .proyecto{
+    min-width: 300px;
+    max-width: 300px;
+    
+    max-height: 300px;
+    min-height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+.carrusel .proyecto .img-proyecto{
+    object-fit: contain;
+    width: 90%;
+    padding: 0 5%;
+    min-height: 80%;
+}
+.carrusel .transparente{
+    height: 100%;
+    width: 100%;
+    background-color: #ebe8e8ee;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    transition: top .5s ease-out;
+    /* , opacity 1s ease; */
+}
+.carrusel .proyecto img{
+    min-height: 90%;
+}
+.carrusel .transparente:hover{
+    opacity: 1;
+}
+.proyecto:hover .transparente{
+    top: 0;
+}
+.proyecto h3{
+    margin: 0 auto;
+    margin-top: -40px;	
+    padding: 10px 2px;
+    background-color: #dddd;
+    position: absolute;
+    width: 100%;
+}
+.proyecto ul{
+    margin: 20px 0 0 0;
+}
+.proyecto ul{
+    list-style: none;
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+    padding: 0;
+    gap: 5px;
+}
+.proyecto ul:first-child{
+    margin-top: 50px;
+}
+.proyecto ul li{
+    max-width: 20%;
+}
+.proyecto li a {
+    padding: 5px;
+}
+.proyecto li a:hover {
+    font-weight: bold;
+}
+.proyecto .tec small{
+    font-size: .75rem;
+    word-wrap: break-word; 
+}
+
+.proyecto::before {
+    content: "Ver detalles";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(to top, #000d, transparent);
+    color: #696393;
+    text-align: center;
+    font-size: 0.9rem;
+    pointer-events: none;
+    height: 50%;
+}
+.proyecto:hover::before{
+    content: "";
+}
+
+.ver-mas{
+    text-align: center;
+    margin-top: 20px;
+}
+.ver-mas .btn-action{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.ver-mas .btn-action .fa-solid{
+    position: relative;
+    z-index: 2;
+    margin-left: 10px;
+    padding: 0.33rem;
+}
+.ver-mas .btn-action:hover .fa-solid{
+    font-weight: bold;
+    border-radius: 50%;
+    color: green;
+    background-color: white;
+    transition: background-color 0.4s ease-out;
+}
+
+.ver-mas .btn-action .fa-solid::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+    z-index: -1;
+}
+
+.ver-mas .btn-action:hover .fa-solid::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.dark .carrusel-container > .btn-scroll{
+    color: white;
+}
+.dark .carrusel .proyecto{
+    background-color: #a89fe955;
+}
+.dark .proyecto h3{
+    background-color: #223c;
+}
+
+.dark .ver-mas .btn-action:hover .fa-solid{
+    color: rgb(82, 220, 36);
+    background-color: white;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .carrusel{
+        font-size: clamp(16px,3vh,25px);
+    }
+    .carrusel .proyecto{
+        min-width: 85%;
+    }
+    .carrusel .transparente{
+        opacity: 1;
+
+    }
+    .carrusel-container{
+        display: block;
+    }
+    .carrusel-container > .btn-scroll{
+        display: none;
+    }
+}
