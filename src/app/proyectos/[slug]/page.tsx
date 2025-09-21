@@ -1,4 +1,4 @@
-import Proyecto from "../../componentes/main/proyectos/Proyecto"
+import Proyecto from "@/componentes/main/proyectos/Proyecto"
 
 interface Props {
   params: { slug: string };

@@ -3,7 +3,6 @@
 // import { HashRouter } from "react-router-dom"
 import {Header, Footer} from "."
 import { DarkContext } from "../context/DarkContext"
-import  Main  from "./main/home/Main"
 import {useDarkMode} from "../hooks/useDarkMode"
 
 

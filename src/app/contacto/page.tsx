@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Contacto from "../componentes/main/contacto/Contacto"
+import Contacto from "@/componentes/main/contacto/Contacto"
 
 export const metadata: Metadata = {
   title: `Contacto - Portafolio Christian Fidelio`,
