@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function ProyectoLayout ({children}:Props) {
+export default function ProyectoLayout ({children}:{children:ReactNode}) {
     return <>
         {children}
     </>
