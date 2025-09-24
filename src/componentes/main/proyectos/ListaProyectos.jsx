@@ -31,7 +31,7 @@ const ProyectoCard = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
 
       <article className={`${styles.card} ${styles.cols}`} aria-label={`Ver detalles del proyecto ${nombre.replaceAll("_"," ")}`}>
         <div className={`${styles.col} ${styles.img}`}>
-          <img src={img} alt={`Imagen de ${nombre}`} loading="lazy" />
+          <img src={img} alt={`Imagen de ${nombre}`} loading="lazy" width="200" height="200" />
         </div>
         <div className={styles.col}>
           <div>

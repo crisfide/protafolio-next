@@ -23,10 +23,15 @@ const Img = ({src,alt="",title=""}) => {
     };
   }, [src]);
 
-  return isOpen ? 
-    (<ModalPortalImg isOpen={isOpen} close={close}>
+  return (<>
+  {    
+    isOpen && (
+      <ModalPortalImg isOpen={isOpen} close={close}>
         <img src={src} alt={alt} title={title} className={className} loading="lazy" />
-    </ModalPortalImg>) : <img src={src} alt={alt} title={title} onClick={open} loading="lazy" />
+      </ModalPortalImg>
+    )}
+    <img src={src} alt={alt} title={title} onClick={open} loading="lazy" />
+  </>)
   
 }
 
