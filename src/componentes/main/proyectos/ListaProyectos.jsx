@@ -34,7 +34,7 @@ const ProyectoCard = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
         <div className={`${styles.col} ${styles.img}`}>
         {img && (
 
-          <Image src={img} alt={`Imagen de ${nombre}`} loading="lazy" width="200" height="200" sizes="(max-width: 800px) 100vw, 200px" />
+          <Image src={img} alt={`Imagen de ${nombre}`} width="200" height="200" sizes="(max-width: 800px) 100vw, 200px" priority />
         )}
         </div>
         <div className={styles.col}>
