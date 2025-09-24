@@ -139,7 +139,7 @@ section:last-child{
   .dark a{
       color: #ccc
   }
-  .dark header, .dark .carrusel .transparente{
+  .dark header{
       background-color: #282832cc;
   }
   .dark .btn-action{

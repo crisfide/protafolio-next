@@ -1,4 +1,4 @@
-import { redesSociales } from "../../dataProps/redesSociales"
+import { redesSociales } from "@/dataProps/redesSociales"
 
 const BtnLinkedin = () => {
   const linkLinkedin = redesSociales.find(r=>r.txt==="Linkedin").ruta

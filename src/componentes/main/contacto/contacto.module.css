@@ -1,6 +1,8 @@
 :root {
     --color-linkedin: #0077B5;
     --color-outlook: #0078d4;
+    --color-whatsapp: #128c7e;
+    /* --color-whatsapp: #25D366; */
 }
 
 main.contacto{
@@ -15,18 +17,21 @@ main.contacto{
     gap: 1rem;
     width: 200px;
 }
-.contacto-contenedor .btn{
+.contacto-contenedor .btn-contacto{
     width: 100%;
     box-sizing: border-box;
 }
-.contacto-contenedor .btn, .contacto-contenedor .btn>*, .btn.linkedin>*{
+.contacto-contenedor .btn-contacto, .contacto-contenedor .btn-contacto>*, .btn-linkedin>*{
     color: white;
 }
-.btn.linkedin{
+.btn-linkedin{
     background-color: var(--color-linkedin);
 }
 .btn-mail{
     background-color: var(--color-outlook);
+}
+.btn-whatsapp{
+    background-color: var(--color-whatsapp);
 }
 
 

@@ -1,11 +1,11 @@
 "use client";
 import { useContext, useState } from "react"
-import { DarkContext } from "../../../context/DarkContext"
+import { DarkContext } from "@/context/DarkContext"
 import Link from "next/link"
-import { obtenerIcono } from "../../../helpers/obtenerIcono"
-import { useThemeImg } from "../../../hooks/useThemeImg"
-import './gridProyectos.css'
+import { obtenerIcono } from "@/helpers/obtenerIcono"
+import { useThemeImg } from "@/hooks/useThemeImg"
 import '../../iconos.css'
+import styles from './gridProyectos.module.css'
 
 
 const gridScroll = (e, izq=false) => {
@@ -32,14 +32,14 @@ const GridProyectos = ({proyectos, verMas = false}) => {
       <h2 className="mt">Proyectos en los que he trabajado</h2>
 
       <section className="">
-        <div className="carrusel-container">
+        <div className={styles['carrusel-container']}>
 
-          <button className="btn-scroll" 
+          <button className={styles['btn-scroll']} 
                 onMouseDown={e => gridScroll(e, true)} 
                 disabled={btnIzqDisabled ? "disabled" : null}
                 >{"<"}</button>
 
-          <div className="carrusel" id="proyectos" onScroll={handleScroll}>
+          <div className={styles.carrusel} id="proyectos" onScroll={handleScroll}>
             {
               proyectos.map( proyecto => (
                 <ProyectoItem {...proyecto} key={proyecto.nombre} />)
@@ -47,7 +47,7 @@ const GridProyectos = ({proyectos, verMas = false}) => {
             }
           </div>
 
-          <button className="btn-scroll" 
+          <button className={styles['btn-scroll']} 
                 onMouseDown={e => gridScroll(e)} 
                 disabled={btnDerDisabled ? "disabled" : null}
                 >{">"}</button>
@@ -55,7 +55,7 @@ const GridProyectos = ({proyectos, verMas = false}) => {
 
 
         { verMas &&
-          <div className="ver-mas">
+          <div className={styles['ver-mas']}>
             <Link href="/proyectos" className="btn-action">
               Ver más proyectos
               <i className="fa-solid fa-arrow-right"></i>
@@ -73,11 +73,11 @@ const ProyectoItem = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
   const img = useThemeImg(nombre,darkMode)
 
   return (
-    <article className="proyecto">
+    <article className={styles.proyecto}>
       <h3>{nombre.replaceAll("_"," ")}</h3>
-      <img src={img} alt={"imagen " + nombre} className="img-proyecto" />
+      <img src={img} alt={"imagen " + nombre} className={styles["img-proyecto"]} />
 
-      <div className="transparente">
+      <div className={styles.transparente}>
         <div>
           <div>
             <p><small>{resumen}</small></p>
@@ -90,7 +90,7 @@ const ProyectoItem = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
             {
               tecnologias.map( tec => (
                 <li key={tec}>
-                  <span className="tec" title={tec}>
+                  <span className={styles.tec} title={tec}>
                     <i className={`devicon-${obtenerIcono(tec)}-plain colored`}></i>
                     <br />
                     <code><small>{tec}</small></code>

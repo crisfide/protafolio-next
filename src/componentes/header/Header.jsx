@@ -1,5 +1,4 @@
 import { itemsMenu } from "../../dataProps/itemsMenu"
-import BtnLinkedin from "./BtnLinkedin"
 import BtnThemeSwitch from "./BtnThemeSwitch"
 import NavMenu from "./NavMenu"
 import './header.css'

@@ -141,17 +141,17 @@
     text-align: center;
     margin-top: 20px;
 }
-.ver-mas .btn-action{
+.ver-mas :global(.btn-action){
     display: inline-block;
     font-size: 1.2rem;
 }
-.ver-mas .btn-action .fa-solid{
+.ver-mas :global(.btn-action .fa-solid){
     position: relative;
     z-index: 2;
     margin-left: 10px;
     padding: 0.33rem;
 }
-.ver-mas .btn-action:hover .fa-solid{
+.ver-mas :global(.btn-action:hover .fa-solid){
     font-weight: bold;
     border-radius: 50%;
     color: green;
@@ -159,7 +159,7 @@
     transition: background-color 0.4s ease-out;
 }
 
-.ver-mas .btn-action .fa-solid::after {
+.ver-mas :global(.btn-action .fa-solid::after) {
     content: "";
     position: absolute;
     top: 50%;
@@ -174,22 +174,25 @@
     z-index: -1;
 }
 
-.ver-mas .btn-action:hover .fa-solid::after {
+.ver-mas :global(.btn-action:hover .fa-solid::after) {
     transform: translate(-50%, -50%) scale(1);
 }
 
 
-.dark .carrusel-container > .btn-scroll{
+:global(.dark) .carrusel-container > .btn-scroll{
     color: white;
 }
-.dark .carrusel .proyecto{
+:global(.dark) .carrusel .transparente{
+    background-color: #282832cc;
+}
+:global(.dark) .carrusel .proyecto{
     background-color: #a89fe955;
 }
-.dark .proyecto h3{
+:global(.dark) .proyecto h3{
     background-color: #223c;
 }
 
-.dark .ver-mas .btn-action:hover .fa-solid{
+:global(.dark) .ver-mas :global(.btn-action:hover .fa-solid){
     color: rgb(82, 220, 36);
     background-color: white;
 }

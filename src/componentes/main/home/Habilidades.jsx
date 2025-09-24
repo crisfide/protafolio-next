@@ -1,5 +1,5 @@
 import { obtenerIcono } from "../../../helpers/obtenerIcono"
-import './habilidades.css'
+import styles from './habilidades.module.css'
 
 const Habilidades = ({tecnologias}) => {
     // const tecs = [...new Set(proyectos.flatMap(p => p.tecnologias))]
@@ -7,7 +7,7 @@ const Habilidades = ({tecnologias}) => {
     // console.log(tecnologias)
 
     return (
-        <section className="habs">
+        <section className={styles.habs} id="habilidades">
             <h2>Tecnologías y habilidades</h2>
 
             <SubListaHabs tecnologias={tecnologias.backend} titulo="Back-end" />
@@ -24,10 +24,10 @@ export default Habilidades
 const SubListaHabs = ({tecnologias, titulo}) => {
     return (<>
         <h3>{titulo}</h3>
-        <ul className="tecnologias-lista">
+        <ul className={styles["tecnologias-lista"]}>
             {tecnologias.map((tec) => (
-                <li key={tec} className="tecnologia-item">
-                    <span className="tec" title={tec}>
+                <li key={tec} className={styles["tecnologia-item"]}>
+                    <span className={styles.tec} title={tec}>
                         <i className={`devicon-${obtenerIcono(tec)}-plain colored`}></i>
                         <small>{tec}</small>
                     </span>

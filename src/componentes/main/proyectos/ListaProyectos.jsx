@@ -1,17 +1,17 @@
 "use client"
 import { useContext } from "react"
-import { DarkContext } from "../../../context/DarkContext"
-import { obtenerIcono } from "../../../helpers/obtenerIcono"
+import { DarkContext } from "@/context/DarkContext"
+import { obtenerIcono } from "@/helpers/obtenerIcono"
 import Link from "next/link"
-import { useThemeImg } from "../../../hooks/useThemeImg"
-import './listaProyectos.css'
+import { useThemeImg } from "@/hooks/useThemeImg"
 import '../../iconos.css'
+import styles from './listaProyectos.module.css'
 
 const ListaProyectos = ({proyectos}) => {
   return (
     <main>
       <h2 className="center">Mis proyectos</h2>
-      <section className="cards">
+      <section className={styles.cards}>
         {
           proyectos.map(proyecto => (
             <ProyectoCard {...proyecto} key={proyecto.nombre} />
@@ -29,11 +29,11 @@ const ProyectoCard = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
   return (
     <Link href={`/proyectos/${nombre}`}>
 
-      <article className="card cols">
-        <div className="col img">
+      <article className={`${styles.card} ${styles.cols}`} aria-label={`Ver detalles del proyecto ${nombre.replaceAll("_"," ")}`}>
+        <div className={`${styles.col} ${styles.img}`}>
           <img src={img} alt={`Imagen de ${nombre}`} loading="lazy" />
         </div>
-        <div className="col">
+        <div className={styles.col}>
           <div>
             <h3>{nombre.replaceAll("_"," ")}</h3>
             <p>{resumen}</p>
@@ -44,7 +44,7 @@ const ProyectoCard = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
               {
                 tecnologias.map( tec => (
                   <li key={tec}>
-                    <span className="tec" title={tec}>
+                    <span className={styles.tec} title={tec}>
                       <i className={`devicon-${obtenerIcono(tec)}-plain colored`}></i>
                     </span>
                   </li>)

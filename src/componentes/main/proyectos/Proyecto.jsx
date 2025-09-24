@@ -1,14 +1,14 @@
 "use client"
-import { proyectos } from "../../../dataProps/proyectos"
+import { proyectos } from "@/dataProps/proyectos"
 import ListaProyectos from "./ListaProyectos"
-import { obtenerIcono } from "../../../helpers/obtenerIcono"
+import { obtenerIcono } from "@/helpers/obtenerIcono"
 import { useContext, useEffect, useState } from "react"
-import { DarkContext } from "../../../context/DarkContext"
+import { DarkContext } from "@/context/DarkContext"
 import Img from "./Img"
-import { existeImg } from "../../../helpers/existeImg"
+import { existeImg } from "@/helpers/existeImg"
 import GridProyectos from "./GridProyectos"
-import './proyecto.css'
 import '../../iconos.css'
+import styles from './proyecto.module.css'
 
 
 const Proyecto = ({nombre}) => {
@@ -67,7 +67,7 @@ const Proyecto = ({nombre}) => {
 
   return (
     <main>
-      <article className="proyecto-detalle">
+      <article className={styles["proyecto-detalle"]}>
 
         <section>
           <h2>{proyecto.nombre.replaceAll("_"," ")}</h2>
@@ -130,7 +130,7 @@ const Proyecto = ({nombre}) => {
         </section>
 
         <h3>Imágenes del proyecto:</h3>
-        <section className="img-proy">
+        <section className={styles["img-proy"]}>
 
           
           {
