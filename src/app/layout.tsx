@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Portafolio Christian Fidelio",
-  description: "Portafolio Christian Fidelio",
+  description: "Portfolio de Christian Fidelio: desarrollo web, software a medida, soluciones tecnológicas innovadoras.",
 };
 
 export default function RootLayout({
@@ -46,6 +46,8 @@ export default function RootLayout({
             gtag('config', 'AW-17597988761');
           `}
         </Script>
+
+        <meta name="google-site-verification" content="google-site-verification=N2E2e6CttVrG1Y-reuUr9a-m-quaGIJ0K1yxihs_rq8" />
 
 
         <meta charSet="utf-8" />
