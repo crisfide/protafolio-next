@@ -47,7 +47,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <meta name="google-site-verification" content="google-site-verification=N2E2e6CttVrG1Y-reuUr9a-m-quaGIJ0K1yxihs_rq8" />
+        <meta name="google-site-verification" content="N2E2e6CttVrG1Y-reuUr9a-m-quaGIJ0K1yxihs_rq8" />
 
 
         <meta charSet="utf-8" />
