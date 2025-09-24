@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/componentes";
 import Container from "@/componentes/Container";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,24 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        
+        {/* Script externo de Google Ads */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17597988761"
+          strategy="afterInteractive"
+        />
+
+        {/* Script inline de configuración */}
+        <Script id="google-ads-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17597988761');
+          `}
+        </Script>
+
+
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />

@@ -78,7 +78,7 @@ Tareas destacadas:
   - Optimización de estructuras de datos leídos desde hojas de cálculo de Excel.
   - Participación en validaciones funcionales junto a usuarios reales del estudio.
   - Desarrollo incremental con fases: relevamiento → prototipado → desarrollo → validación → entrega.
-  - Despligue en servidor web a través de Docker.
+  - Despliegue en Azure a través de Docker y automatizado con Github Actions.
 
 Alcance funcional:
   - Sustitución de procesos manuales por flujos digitales.
