@@ -6,6 +6,7 @@ import { obtenerIcono } from "@/helpers/obtenerIcono"
 import { useThemeImg } from "@/hooks/useThemeImg"
 import '../../iconos.css'
 import styles from './gridProyectos.module.css'
+import Image from "next/image";
 
 
 const gridScroll = (e, izq=false) => {
@@ -71,11 +72,13 @@ const GridProyectos = ({proyectos, verMas = false}) => {
 const ProyectoItem = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYoutube}) => {
   const { darkMode } = useContext(DarkContext)
   const img = useThemeImg(nombre,darkMode)
-
+  
   return (
     <article className={styles.proyecto}>
       <h3>{nombre.replaceAll("_"," ")}</h3>
-      <img src={img} alt={"imagen " + nombre} className={styles["img-proyecto"]} />
+      {img && (
+        <Image src={img} alt={"imagen " + nombre} className={styles["img-proyecto"]} width={200} height={200} sizes="(max-width: 800px) 100vw, 200px"   />
+      )}
 
       <div className={styles.transparente}>
         <div>
