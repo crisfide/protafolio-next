@@ -49,6 +49,11 @@ export default function RootLayout({
 
         {/* Verificación de Google Search Console */}
         <meta name="google-site-verification" content="l4rXnbvItyA44LlrCR-BH0aigDqlSrGupQWULWVVlts" />
+        
+        <meta
+          name="keywords"
+          content="Christian Fidelio, desarrollador web, software a medida, portfolio desarrollo web, programación freelance"
+        />
 
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>

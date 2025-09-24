@@ -21,7 +21,7 @@ export const Perfil = ( {sobreMi:{titulo, subtitulo, descripcion}} ) => {
       
       <article>
         <figure>
-          <img src="assets/fotoPerfil.jpg" alt="Foto de Christian Fidelio" loading="lazy" />
+          <img src="assets/fotoPerfil.jpg" alt="Foto Christian Fidelio desarrollador web" loading="lazy" />
         </figure>
       </article>
 
