@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useThemeImg } from "@/hooks/useThemeImg"
 import '../../iconos.css'
 import styles from './listaProyectos.module.css'
+import Image from "next/image"
 
 const ListaProyectos = ({proyectos}) => {
   return (
@@ -31,7 +32,10 @@ const ProyectoCard = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
 
       <article className={`${styles.card} ${styles.cols}`} aria-label={`Ver detalles del proyecto ${nombre.replaceAll("_"," ")}`}>
         <div className={`${styles.col} ${styles.img}`}>
-          <img src={img} alt={`Imagen de ${nombre}`} loading="lazy" width="200" height="200" />
+        {img && (
+
+          <Image src={img} alt={`Imagen de ${nombre}`} loading="lazy" width="200" height="200" sizes="(max-width: 800px) 100vw, 200px" />
+        )}
         </div>
         <div className={styles.col}>
           <div>
