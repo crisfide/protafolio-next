@@ -96,6 +96,43 @@ Alcance funcional:
   },
 
   {
+    nombre: "Punto_de_Venta_y_Facturación",
+    resumen: "Rediseño de interfaz Windows Forms y desarrollo de módulo de facturación automática con ARCA Web Services SOAP.",
+    descripcion:
+    `En esta oportunidad, participé en el rediseño de la interfaz de usuario de una aplicación de escritorio existente desarrollada en C# con Windows Forms, orientada a la gestión de inventarios y ventas para comercios minoristas.
+
+Además, desarrollé un módulo de facturación automática que se integra con los servicios web SOAP de ARCA (ex AFIP), permitiendo la emisión de facturas y notas de crédito tipo A, B y C. 
+
+
+Stack y Tecnologías Utilizadas:
+  - OpenSSL.
+  - SAP Crystal Reports.
+  - Comunicación SOAP: Integración con ARCA Web Services para la emisión de comprobantes electrónicos.
+  - Frontend: Windows Forms, .NET Framework.
+  - Base de datos: SQLite.
+  
+Tareas destacadas:
+  - Desarrollo de módulos de facturación automática para ventas.
+  - Cálculo automático de impuestos y totales según el tipo de comprobante.
+  - Uso de DataGridView con imágemes de productos y búsqueda dinámica.
+  - Diseño de interfaz moderna, paleta de colores monocromática y controles personalizados.
+  
+Alcance funcional:
+  - Generación y gestión de certificados digitales para la autenticación con ARCA.
+  - Emisión automática de facturas y notas de crédito.
+  - Gestión de clientes, productos y stock.
+  - Reportes de ventas y stock con SAP Crystal Reports.
+  - Backup automático de la base de datos.
+  - Documentación: Redacción de instructivo de configuración y video tutorial para certificados digitales.
+
+`,
+    tecnologias: ["C#", ".NET", "XML", "SQLite"],
+    linkWeb: null,
+    linkGithub: "https://github.com/crisfide/Programa-de-Stock-",
+    linkYoutube: null,
+  },
+
+  {
     nombre: "ArgyView",
     resumen: "ArgyView es una app móvil Android que muestra en tiempo real las cotizaciones del mercado bursátil argentino...",
     descripcion:
