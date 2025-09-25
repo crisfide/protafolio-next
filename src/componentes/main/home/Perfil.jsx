@@ -8,7 +8,7 @@ export const Perfil = ( {sobreMi:{titulo, subtitulo, descripcion}} ) => {
       <article>
         <h1>{titulo}</h1>
         <h2>{subtitulo}</h2>
-        <p>{descripcion}</p>
+        {descripcion}
         <br />
         <div className='gap-10'>
           <a href="assets/cv_Christian_Fidelio.pdf" target="_blank" rel="noopener noreferrer" className="btn-action">Descargar CV</a>
