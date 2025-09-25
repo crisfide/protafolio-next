@@ -16,10 +16,10 @@ const Servicios = ({servicios}) => {
 export default Servicios
 
 const ServicioItem = ({serv}) => {
-    return (<>
+    return (<article className={styles.servicioItem}>
         <h3>{serv.titulo}</h3>
         <p>
             {serv.resumen}
         </p>
-    </>)
+    </article>)
 }

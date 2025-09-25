@@ -27,7 +27,9 @@ Podés gestionar stock, turnos, facturación, clientes y más.
   },
   {
     titulo: "Automatización e Inteligencia Artificial",
-    resumen: `Implementación de soluciones de IA y automatización para mejorar la eficiencia y reducir tiempo gastado en tareas repetitivas.    
+    resumen: `Implementación de soluciones de IA.
+    
+Automatización para mejorar la eficiencia y reducir tiempo gastado en tareas repetitivas.    
     `,
     descripcion: "",
   },

@@ -39,9 +39,6 @@ button, .btn, footer, ul, img{
 /* main */
 main{
   min-height: 100vh;
-}
-
-main {
   animation: mov 0.5s ease;
 }
 
@@ -64,6 +61,7 @@ main, footer ul{
 }
 section{
   padding-bottom: 15vh;
+  
 }
 section:last-child{
   padding-bottom: 5vh;
