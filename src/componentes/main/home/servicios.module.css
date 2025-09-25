@@ -2,25 +2,34 @@
     text-align: center;
     margin: 20px 0;
 }
+.servicios .contenedor{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .servicios article{
     margin: 1rem auto;
     padding: 15px;
     border: 1px solid #8888;
     border-radius: 10px;
+    width: 250px;
 }
 .servicios article:hover{
     box-shadow: 0 0 10px #a89fe9;
 }
 
 
-.servicios h3::before{
-    display: inline-block;
-    width: 0.5rem;
-    background-color: #a89fe988;
-    margin-right: 1rem;
-    content: " ";
-}
 .servicios p {
     white-space: pre-wrap;
     font-size: 1rem;
+}
+
+.servicios a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline dashed;
+    text-underline-offset: .25rem;
+}
+.servicios a:hover{
+    text-decoration: underline solid;
 }
