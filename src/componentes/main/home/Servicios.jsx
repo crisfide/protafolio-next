@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link"
-import { obtenerIcono } from "../../../helpers/obtenerIcono"
 import styles from './servicios.module.css'
+import { useRef } from "react"
+import useScrollAnim from "@/hooks/useScrollAnim"
 
 const Servicios = ({servicios}) => {
 
@@ -19,7 +21,10 @@ const Servicios = ({servicios}) => {
 export default Servicios
 
 const ServicioItem = ({serv}) => {
-    return (<article className={styles.servicioItem}>
+    const ref = useRef(null);
+    useScrollAnim(ref, { threshold: 0.2 }, false); // true = animar solo una vez
+
+    return (<article className={`${styles.servicioItem} escondido`} ref={ref}>
         <i className={serv.icono}></i>
         <h3>{serv.titulo}</h3>
         {serv.resumen}

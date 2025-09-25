@@ -111,6 +111,18 @@ strong{
   font-weight: 600;
 }
 
+ .escondido *{
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
+.mostrado *{
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
 
 
 
