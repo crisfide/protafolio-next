@@ -4,7 +4,7 @@
 //   nombre,resumen,descripcion,tecnologias,linkWeb,linkGithub,linkYoutube,
 // });
 
-interface proyecto {  
+export interface proyecto {  
   nombre:string,
   resumen:string,
   descripcion:string,
