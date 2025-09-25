@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 
 interface servicio {  
   titulo:string,
-  resumen:string|JSX.Element,
+  resumen:string|ReactNode,
   icono:string
   
 }
