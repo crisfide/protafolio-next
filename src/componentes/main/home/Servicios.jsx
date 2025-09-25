@@ -22,9 +22,7 @@ const ServicioItem = ({serv}) => {
     return (<article className={styles.servicioItem}>
         <i className={serv.icono}></i>
         <h3>{serv.titulo}</h3>
-        <p>
-            {serv.resumen}
-        </p>
+        {serv.resumen}
 
         <Link href="/contacto" className="cta">Mas info →</Link>
     </article>)

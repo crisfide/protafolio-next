@@ -35,3 +35,12 @@
 .servicios a:hover{
     text-decoration: underline solid;
 }
+
+.servicios ul{
+    display: block;
+}
+.servicios ul li{
+    margin-left: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}

@@ -8,7 +8,7 @@ const compartirApp = (e) => {
         navigator.share({
             title: 'Portafolio de Christian Fidelio, desarrollador',
             text: 'Portafolio de Christian Fidelio, desarrollador',
-            url: 'https://crisfide.github.io/Portafolio-CF/', 
+            url: 'https://crisfide.vercel.app/', 
         })
         .then(() => console.log('Contenido compartido exitosamente.'))
         .catch((error) => console.error('Error al compartir:', error));
