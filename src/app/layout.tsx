@@ -30,14 +30,15 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        
         {/* Script externo de Google Ads */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17597988761"
-          strategy="afterInteractive"
+          async src="https://www.googletagmanager.com/gtag/js?id=AW-17597988761"
+          //strategy="afterInteractive"
         />
 
         {/* Script inline de configuración */}
-        <Script id="google-ads-init" strategy="afterInteractive">
+        <Script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
