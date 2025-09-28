@@ -38,7 +38,7 @@ export default function RootLayout({
         />
 
         {/* Script inline de configuración */}
-        <Script>
+        <Script id="google-ads-config">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
