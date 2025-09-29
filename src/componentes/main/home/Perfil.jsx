@@ -11,7 +11,7 @@ export const Perfil = ( {sobreMi:{titulo, subtitulo, descripcion}} ) => {
         {descripcion}
         <br />
         <div className='gap-10'>
-          <a href="assets/cv_Christian_Fidelio.pdf" target="_blank" rel="noopener noreferrer" className="btn-action">Descargar CV</a>
+          <a href="assets/cv_Christian_Fidelio.pdf" target="_blank" rel="noopener noreferrer" className="btn-action" title='Descargar CV'>Descargar CV</a>
           <BtnLinkedin />
           <BtnWhatsApp />
         </div>

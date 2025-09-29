@@ -4,7 +4,7 @@ const BtnWhatsApp = () => {
   const link = redesSociales.find(r=>r.txt==="WhatsApp").ruta
 
   return (
-    <a className="btn-action" aria-label="Contactar por WhatsApp" href={link} target="_blank" rel="noopener noreferrer">
+    <a className="btn-action" aria-label="Contactar por WhatsApp" href={link} target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp">
       <i className="fa-brands fa-whatsapp"></i>
     </a>
   )
