@@ -18,7 +18,7 @@ export const proyectos : proyecto[] = [
 
   {
     nombre: "Electro_Desafio",
-    resumen: "Desarrollo de una aplicación web responsiva para automatizar la gestión de trabajos eléctricos, pagos y sistema de referidos.",
+    resumen: "Aplicación web para gestión de obras eléctricos, pagos y referidos.",
     descripcion:
     `Sistema de Referidos para Electricistas
 
@@ -58,7 +58,7 @@ Tareas adicionales realizadas:
 
   {
     nombre: "Sistema_de_Gestión_Contable",
-    resumen: "Pasantía como Desarrollador Full Stack .NET para Estudio contable, desarrollando un sistema de gestión y liquidación automática de impuestos.",
+    resumen: "Gestión y liquidación automática de impuestos.",
     descripcion:
     `Pasantía como Desarrollador Full Stack .NET para Estudio contable V. Domínguez 
 
@@ -97,7 +97,7 @@ Alcance funcional:
 
   {
     nombre: "Punto_de_Venta_y_Facturación",
-    resumen: "Rediseño de interfaz Windows Forms y desarrollo de módulo de facturación automática con ARCA Web Services SOAP.",
+    resumen: "Aplicación de escritorio: venta minorista, stock y módulo de facturación automática con ARCA Web Services SOAP.",
     descripcion:
     `En esta oportunidad, participé en el rediseño de la interfaz de usuario de una aplicación de escritorio existente desarrollada en C# con Windows Forms, orientada a la gestión de inventarios y ventas para comercios minoristas.
 
@@ -134,7 +134,7 @@ Alcance funcional:
 
   {
     nombre: "ArgyView",
-    resumen: "ArgyView es una app móvil Android que muestra en tiempo real las cotizaciones del mercado bursátil argentino...",
+    resumen: "App móvil Android para visualizar cotizaciones del mercado bursátil argentino...",
     descripcion:
     `ArgyView es una aplicación móvil desarrollada en Kotlin para Android que permite visualizar en tiempo real las cotizaciones del mercado bursátil argentino. Ideal para inversores y entusiastas del mercado financiero. 
 
@@ -143,7 +143,8 @@ Funcionalidades:
   - Actualización en tiempo real.
   - Filtros y búsqueda de acciones.
   - Gráficos históricos (próximamente).
-  - Panel de favoritos personalizable.`,
+  - Panel de favoritos personalizable.
+`,
     tecnologias: ["Kotlin", "Android"],
     linkWeb: null,
     linkGithub: "https://github.com/crisfide/ArgyView",
@@ -152,7 +153,7 @@ Funcionalidades:
 
   {
     nombre: "Sistema_de_Finanzas_Hogareñas_UNLZ",
-    resumen: "CAJA es una aplicación diseñada para gestionar los gastos e ingresos del hogar, implementando el patrón MVC en PHP.",
+    resumen: "Aplicación web diseñada para gestionar los gastos e ingresos del hogar.",
     descripcion:
     `CAJA es un sistema colaborativo desarrollado en equipo para gestionar los gastos e ingresos del hogar, facilitando el control financiero personal. El proyecto fue implementado en un repositorio Git compartido con otros grupos, permitiendo una integración eficiente del código y una colaboración fluida entre equipos.
 
@@ -172,49 +173,49 @@ Este sistema facilita la toma de decisiones financieras a través de un seguimie
     linkYoutube: null
   },
 
-  {
-    nombre: "Heladería_UNLZ",
-    resumen: "Sistema web para la gestión de una heladería, implementando MVC e inyección de dependencias.",
-    descripcion:
-    `Este proyecto, desarrollado en C# con ASP.NET, consiste en un sistema web para la gestión de una heladería, incluyendo un CRUD de sabores de helado, una página para realizar pedidos, distinguiendo rol de usuario administrador y cliente. 
+//   {
+//     nombre: "Heladería_UNLZ",
+//     resumen: "Sistema web para la gestión de una heladería, implementando MVC e inyección de dependencias.",
+//     descripcion:
+//     `Este proyecto, desarrollado en C# con ASP.NET, consiste en un sistema web para la gestión de una heladería, incluyendo un CRUD de sabores de helado, una página para realizar pedidos, distinguiendo rol de usuario administrador y cliente. 
 
-Se utiliza una base de datos compartida en Azure. 
+// Se utiliza una base de datos compartida en Azure. 
     
-Los usuarios deben ingresar con su cuenca de Google, con la cual se realiza la autenticación con aprovechando la tecnología OAuth 2.0.
+// Los usuarios deben ingresar con su cuenca de Google, con la cual se realiza la autenticación con aprovechando la tecnología OAuth 2.0.
 
-Funcionalidades:
-  - Gestión de productos.
-  - Pedidos en línea.
-  - Autenticación con Google.
-  - Base de datos en Azure.
-  - Interfaz con Bootstrap y JavaScript.`,
-    tecnologias: ["C#", ".NET", "OAuth2", "Azure", "Bootstrap", "Git"],
-    linkWeb: "https://www.heladeriaunlz.somee.com/",
-    linkGithub: "https://github.com/crisfide/HeladeriaTP-UNLZ",
-    linkYoutube: null
-  },
+// Funcionalidades:
+//   - Gestión de productos.
+//   - Pedidos en línea.
+//   - Autenticación con Google.
+//   - Base de datos en Azure.
+//   - Interfaz con Bootstrap y JavaScript.`,
+//     tecnologias: ["C#", ".NET", "OAuth2", "Azure", "Bootstrap", "Git"],
+//     linkWeb: "https://www.heladeriaunlz.somee.com/",
+//     linkGithub: "https://github.com/crisfide/HeladeriaTP-UNLZ",
+//     linkYoutube: null
+//   },
 
-  {
-    nombre: "Carrito_de_compras_UNLZ",
-    resumen: "Carrito de compras web desarrollado en Java con MVC para la UNLZ.",
-    descripcion:
-    `Proyecto grupal desarrollado en Java con servlets y JSP implementando patrones como MVC (modelo-vista-controlador), singleton, factory.
+//   {
+//     nombre: "Carrito_de_compras_UNLZ",
+//     resumen: "Carrito de compras web desarrollado en Java con MVC para la UNLZ.",
+//     descripcion:
+//     `Proyecto grupal desarrollado en Java con servlets y JSP implementando patrones como MVC (modelo-vista-controlador), singleton, factory.
 
-Funcionalidades:
-  - Agregar productos al carrito.
-  - Modificar y eliminar productos.
-  - Calcular total de la compra.
-  - Generación de factura PDF.
+// Funcionalidades:
+//   - Agregar productos al carrito.
+//   - Modificar y eliminar productos.
+//   - Calcular total de la compra.
+//   - Generación de factura PDF.
 
-El trabajo fomentó la colaboración y la aplicación de conceptos clave, como la separación de responsabilidades, trabajo con repositorios y desarrollo web dinámico.
+// El trabajo fomentó la colaboración y la aplicación de conceptos clave, como la separación de responsabilidades, trabajo con repositorios y desarrollo web dinámico.
 
 
   
-Tecnologías usadas: Backend en Java, Frontend en HTML/CSS/JS, servidor Apache Tomcat.`,
-    tecnologias: ["Java", "Tomcat", "Bootstrap", "Git"],
-    linkWeb: null,
-    linkGithub: "https://github.com/crisfide/CarritoTP-UNLZ",
-    linkYoutube: null
-  },
+// Tecnologías usadas: Backend en Java, Frontend en HTML/CSS/JS, servidor Apache Tomcat.`,
+//     tecnologias: ["Java", "Tomcat", "Bootstrap", "Git"],
+//     linkWeb: null,
+//     linkGithub: "https://github.com/crisfide/CarritoTP-UNLZ",
+//     linkYoutube: null
+//   },
 
 ];
