@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio Christian Fidelio",
+  title: "Christian Fidelio | Programador",
   description: "Portfolio de Christian Fidelio: desarrollo web, software a medida, soluciones tecnológicas innovadoras.",
 };
 
