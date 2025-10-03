@@ -56,7 +56,16 @@ export default function RootLayout({
           content="Christian Fidelio, desarrollador web, software a medida, portfolio desarrollo web, programación freelance"
         />
 
-        <meta charSet="utf-8" />
+        {/* <!-- Open Graph --> */}
+        <meta property="og:title" content="Christian Fidelio | Programador" />
+        <meta property="og:description" content="Desarrollador Web Full Stack, software a medida, soluciones tecnológicas innovadoras." />
+        <meta property="og:image" content="/assets/logo.png" />
+        <meta property="og:url" content="https://crisfide.vercel.app" />
+
+        {/* <!-- Twitter Card --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
