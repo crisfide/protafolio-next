@@ -1,9 +1,5 @@
-# *
 User-agent: *
 Allow: /
-
-# Host
-Host: https://crisfide.vercel.app/
 
 # Sitemaps
 Sitemap: https://crisfide.vercel.app/sitemap.xml
