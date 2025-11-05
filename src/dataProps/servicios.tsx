@@ -33,6 +33,9 @@ export const servicios : servicio[] = [
       <p>
         Desarrollo de software para optimizar procesos internos.
       </p>
+      <p>
+        Transformo largos procesos manuales en herramientas simples y fáciles de usar.
+      </p>
       <ul>
         <li>Stock</li>
         <li>Facturación</li>
