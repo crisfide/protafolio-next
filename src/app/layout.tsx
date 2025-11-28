@@ -30,6 +30,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+
+        <ThemeScript />
         
         {/* Script externo de Google Ads */}
         <Script
@@ -82,5 +84,25 @@ export default function RootLayout({
         </Container>
       </body>
     </html>
+  );
+}
+
+
+function ThemeScript() {
+  return (
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function() {
+            try {
+              const theme = localStorage.getItem('dark');
+              if (JSON.parse(theme) === true) {
+                document.body.classList.add('dark');
+              }
+            } catch (_) {}
+          })();
+        `,
+      }}
+    />
   );
 }
