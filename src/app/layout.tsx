@@ -30,9 +30,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-
-        <ThemeScript />
-        
         {/* Script externo de Google Ads */}
         <Script
           async src="https://www.googletagmanager.com/gtag/js?id=AW-17597988761"
@@ -72,7 +69,7 @@ export default function RootLayout({
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} dark`}>
         <div id="modal"></div>
 
         <Container>
@@ -88,21 +85,4 @@ export default function RootLayout({
 }
 
 
-function ThemeScript() {
-  return (
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          (function() {
-            try {
-              const theme = localStorage.getItem('dark');
-              if (JSON.parse(theme) === true) {
-                document.body.classList.add('dark');
-              }
-            } catch (_) {}
-          })();
-        `,
-      }}
-    />
-  );
-}
+
