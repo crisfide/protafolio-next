@@ -35,10 +35,10 @@ const GridProyectos = ({proyectos, verMas = false}) => {
       <section className="">
         <div className={styles['carrusel-container']}>
 
-          <button className={styles['btn-scroll']} 
+          {/* <button className={styles['btn-scroll']} 
                 onMouseDown={e => gridScroll(e, true)} 
                 disabled={btnIzqDisabled ? "disabled" : null}
-                >{"<"}</button>
+                >{"<"}</button> */}
 
           <div className={styles.carrusel} id="proyectos" onScroll={handleScroll}>
             {
@@ -48,10 +48,10 @@ const GridProyectos = ({proyectos, verMas = false}) => {
             }
           </div>
 
-          <button className={styles['btn-scroll']} 
+          {/* <button className={styles['btn-scroll']} 
                 onMouseDown={e => gridScroll(e)} 
                 disabled={btnDerDisabled ? "disabled" : null}
-                >{">"}</button>
+                >{">"}</button> */}
         </div>
 
 
