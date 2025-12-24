@@ -90,7 +90,7 @@ Alcance funcional:
 
 `,
     tecnologias: ["C#", ".NET", "Docker", "Bootstrap", "Git"],
-    linkWeb: "https://estudioappcontable.somee.com",
+    linkWeb: "https://appestudiocontable.somee.com",
     linkGithub: "https://github.com/CejasPablo/AppEstudioContable",
     linkYoutube: null,
   },
