@@ -222,7 +222,7 @@
     .carrusel .proyecto{
         min-width: 85%;
         margin: auto;
-        /* min-height: 250px; */
+        min-height: 350px;
     }
     .carrusel .transparente{
         /* opacity: 1; */
