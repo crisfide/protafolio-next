@@ -35,11 +35,6 @@ const GridProyectos = ({proyectos, verMas = false}) => {
       <section className="">
         <div className={styles['carrusel-container']}>
 
-          {/* <button className={styles['btn-scroll']} 
-                onMouseDown={e => gridScroll(e, true)} 
-                disabled={btnIzqDisabled ? "disabled" : null}
-                >{"<"}</button> */}
-
           <div className={styles.carrusel} id="proyectos" onScroll={handleScroll}>
             {
               proyectos.map( proyecto => (
@@ -48,10 +43,6 @@ const GridProyectos = ({proyectos, verMas = false}) => {
             }
           </div>
 
-          {/* <button className={styles['btn-scroll']} 
-                onMouseDown={e => gridScroll(e)} 
-                disabled={btnDerDisabled ? "disabled" : null}
-                >{">"}</button> */}
         </div>
 
 
@@ -75,61 +66,66 @@ const ProyectoItem = ({nombre, resumen, tecnologias, linkWeb, linkGithub, linkYo
   
   return (
     <article className={styles.proyecto}>
-      <h3>{nombre.replaceAll("_"," ")}</h3>
-      {img && (
-        <Image src={img} alt={"imagen " + nombre} className={styles["img-proyecto"]} width={200} height={200} sizes="(max-width: 800px) 100vw, 200px"   />
-      )}
 
-      <div className={styles.transparente}>
-        <div>
+      <h3>{nombre.replaceAll("_"," ")} </h3>
+
+      <div className={styles["transparente-rel"]}>
+        {img && (
+          <Image src={img} alt={"imagen " + nombre} className={styles["img-proyecto"]} width={200} height={200} sizes="(max-width: 800px) 100vw, 200px"   />
+        )}
+
+
+        <div className={styles.transparente}>
           <div>
-            <p><small>{resumen}</small></p>
-            <Link href={`/proyectos/${nombre}`} className="btn-action">+ detalles</Link>
+            <div>
+              <p><small>{resumen}</small></p>
+              <Link href={`/proyectos/${nombre}`} className="btn-action">+ detalles</Link>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <ul>
-            {
-              tecnologias.map( tec => (
-                <li key={tec}>
-                  <span className={styles.tec} title={tec}>
-                    <i className={`devicon-${obtenerIcono(tec)}-plain colored`}></i>
-                    <br />
-                    <code><small>{tec}</small></code>
-                  </span>
-                </li>)
-              )
-            }            
-          </ul>
+          <div>
+            <ul>
+              {
+                tecnologias.map( tec => (
+                  <li key={tec}>
+                    <span className={styles.tec} title={tec}>
+                      <i className={`devicon-${obtenerIcono(tec)}-plain colored`}></i>
+                      <br />
+                      <code><small>{tec}</small></code>
+                    </span>
+                  </li>)
+                )
+              }            
+            </ul>
 
-          <ul>
-            <li>
-              <a href={linkGithub} target="_blank" title="Ver en Github">
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </li>
-            {
-              (linkWeb) ?
+            <ul>
               <li>
-                <a href={linkWeb} target="_blank" title="Acceder al proyecto">
-                  <i className="fa-solid fa-link"></i>
+                <a href={linkGithub} target="_blank" title="Ver en Github">
+                  <i className="fa-brands fa-github"></i>
                 </a>
               </li>
-              :null
-            }
-            {
-              (linkYoutube) ?
-              <li>
-                <a href={linkYoutube} target="_blank" title="Video del proyecto">
-                  <i className="fa-brands fa-youtube"></i>
-                </a>
-              </li>
-              :null
-            }
+              {
+                (linkWeb) ?
+                <li>
+                  <a href={linkWeb} target="_blank" title="Acceder al proyecto">
+                    <i className="fa-solid fa-link"></i>
+                  </a>
+                </li>
+                :null
+              }
+              {
+                (linkYoutube) ?
+                <li>
+                  <a href={linkYoutube} target="_blank" title="Video del proyecto">
+                    <i className="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                :null
+              }
 
-          </ul>
+            </ul>
 
+          </div>
         </div>
       </div>
 

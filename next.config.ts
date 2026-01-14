@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*).(woff2|jpg|jpeg|webp|png|js|css|svg)",
+        source: "/(.*).(woff2|jpg|jpeg|webp|png|js|svg)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],

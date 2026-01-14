@@ -152,7 +152,7 @@ Funcionalidades:
   },
 
   {
-    nombre: "Sistema_de_Finanzas_Hogareñas_UNLZ",
+    nombre: "Sistema_de_Finanzas_Hogareñas",
     resumen: "Aplicación web diseñada para gestionar los gastos e ingresos del hogar.",
     descripcion:
     `CAJA es un sistema colaborativo desarrollado en equipo para gestionar los gastos e ingresos del hogar, facilitando el control financiero personal. El proyecto fue implementado en un repositorio Git compartido con otros grupos, permitiendo una integración eficiente del código y una colaboración fluida entre equipos.
