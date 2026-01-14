@@ -55,13 +55,19 @@ main{
 
 main, footer ul{
   margin: 10px auto;
+
+}
+footer ul{  
   width: 65vw;
   min-width: 400px;
   max-width: 75vw;
 }
 section{
   padding-bottom: 15vh;
-  
+  width: 75vw;
+  min-width: 400px;
+  max-width: 75vw;
+  margin: auto;
 }
 section:last-child{
   padding-bottom: 5vh;
