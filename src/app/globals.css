@@ -118,6 +118,11 @@ strong{
   font-weight: 600;
 }
 
+h2{
+  text-align: center;
+  width: 100%;
+}
+
  .escondido *{
   opacity: 0;
   transform: translateY(5rem);
@@ -199,7 +204,12 @@ strong{
   
 
   main{
-      padding: 10px 10vw;
+      padding: 10px 0;
+      /* padding: 10px 10vw; */
+  }
+
+  section{
+    padding: 10px 10vw;
   }
 
   
